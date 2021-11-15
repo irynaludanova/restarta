@@ -1,0 +1,11 @@
+.social a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}

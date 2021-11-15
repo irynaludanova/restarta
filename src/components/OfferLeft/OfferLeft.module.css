@@ -1,0 +1,41 @@
+h1 {
+  font-size: 35px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: "Play", sans-serif;
+  font-weight: 700 !important;
+  hyphens: auto;
+}
+
+.dark {
+  color: #050930;
+  padding: 20px 0 20px 0;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+  z-index: 1;
+}
+
+.mobile {
+  display: none;
+}
+
+.image {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .left {
+    align-items: center;
+  }
+  .mobile {
+    display: flex;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .image {
+    width: 84%;
+  }
+}

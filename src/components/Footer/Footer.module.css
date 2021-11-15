@@ -1,0 +1,43 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #20255c;
+  color: white;
+  margin-top: 1rem;
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  width: 106%;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.link {
+  cursor: pointer;
+  color: white;
+  padding: 0;
+}
+
+.footer a {
+  width: 150%;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .social {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

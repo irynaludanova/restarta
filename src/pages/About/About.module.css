@@ -1,0 +1,100 @@
+.about {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding: 3rem;
+  flex-wrap: nowrap !important;
+  min-height: 100vh;
+}
+
+.image {
+  margin: 2rem 0 1rem 3rem;
+}
+
+.link {
+  background-color: #20255c !important;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #20255c !important;
+  color: white;
+}
+
+.desc1 {
+  display: block;
+  width: 56%;
+}
+
+.desc2 {
+  display: block;
+  width: 68%;
+}
+.note {
+  position: absolute;
+  width: 36%;
+  margin-top: -22%;
+  margin-left: 57%;
+}
+
+.words {
+  display: block;
+  position: absolute;
+  width: 54%;
+  top: 41%;
+  left: 52%;
+}
+
+.clients {
+  display: block;
+  position: relative;
+  margin-top: -41%;
+  margin-left: 8%;
+  left: 111%;
+}
+
+.client {
+  position: absolute;
+  box-shadow: -7px 10px 18px -5px rgba(7, 31, 53, 0.69);
+  -webkit-box-shadow: -7px 10px 18px -5px rgba(7, 31, 53, 0.69);
+  -moz-box-shadow: -7px 10px 18px -5px rgba(7, 31, 53, 0.69);
+}
+.client:nth-child(1) {
+  margin-top: 18%;
+  left: 0%;
+  z-index: 3;
+  width: 26%;
+}
+.client:nth-child(2) {
+  margin-top: 28%;
+  left: 43%;
+  z-index: 0;
+  width: 22%;
+}
+.client:nth-child(3) {
+  margin-top: -7%;
+  left: 15%;
+  z-index: 1;
+  width: 34%;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 2rem;
+  }
+
+  .desc2,
+  .desc1 {
+    width: 100%;
+  }
+  .words,
+  .note,
+  .clients {
+    display: none;
+  }
+  .image {
+    width: 80%;
+  }
+}

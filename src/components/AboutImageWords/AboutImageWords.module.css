@@ -1,0 +1,7 @@
+.words {
+  width: 50%;
+}
+.word {
+  display: block;
+  position: absolute;
+}

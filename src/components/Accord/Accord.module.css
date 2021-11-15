@@ -1,0 +1,22 @@
+.accordion {
+  width: 80%;
+  margin-top: 0.5rem;
+  box-shadow: -10px 13px 5px 0px rgba(2, 2, 102, 0.46);
+  -webkit-box-shadow: -10px 13px 5px 0px rgba(2, 2, 102, 0.46);
+  -moz-box-shadow: -10px 13px 5px 0px rgba(2, 2, 102, 0.46);
+}
+.item {
+  background: #e5ebfd;
+}
+.header button {
+  background: #20255c;
+  color: white;
+}
+
+.header button::after {
+  background: #20255c;
+  color: white;
+  background-color: white;
+  background-image: url("./../../assets/images/expand-arrow.png");
+  background-size: 1.25rem;
+}
