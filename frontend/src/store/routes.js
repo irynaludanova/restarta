@@ -4,7 +4,7 @@ import { FaTelegram } from "react-icons/fa"
 import { SiGmail } from "react-icons/si"
 export const routes = [
   { id: 1, path: "#about", exact: true, component: "О нас" },
-  { id: 2, path: "#advantage", exact: true, component: "Наши преимущества" },
+  { id: 2, path: "#advantage", exact: true, component: "Почему мы" },
   { id: 3, path: "#questions", exact: true, component: "ЧаВо" },
   { id: 4, path: "#finish", exact: true, component: "Контакты" },
 ]

@@ -6,7 +6,11 @@ const Questions = () => {
   return (
     <Row id="questions">
       <Col className={classes.questions}>
-        <h3> ЧАсто задаваемые ВОпросы</h3>
+        <h3>
+          {" "}
+          <mark style={{ backgroundColor: "green" }}>ЧА</mark>сто задаваемые
+          ВОпросы
+        </h3>
         <Accord />
       </Col>
     </Row>

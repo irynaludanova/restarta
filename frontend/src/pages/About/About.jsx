@@ -4,9 +4,9 @@ import { Col, Row, Tabs, Tab } from "react-bootstrap"
 import classes from "./About.module.css"
 import notebook from "./../../assets/images/notebook.png"
 import AboutImageWords from "../../components/AboutImageWords/AboutImageWords"
-import client1 from "./../../assets/images/client1.png"
-import client2 from "./../../assets/images/client2.png"
-import client3 from "./../../assets/images/client3.png"
+import client1 from "./../../assets/images/client1.webp"
+import client2 from "./../../assets/images/client2.webp"
+import client3 from "./../../assets/images/client3.webp"
 
 const About = () => {
   return (
