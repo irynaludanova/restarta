@@ -1,23 +1,23 @@
 import React from "react"
-import { Col, Row } from "react-bootstrap"
-import BigArrow from "../../components/BigArrow/BigArrow"
+import { Row, Col } from "antd"
 import OfferLeft from "../../components/OfferLeft/OfferLeft"
 import OfferRight from "../../components/OfferRight/OfferRight"
 import classes from "./Main.module.css"
+import arrow from "./../../assets/images/bigarrow.png"
 const Main = () => {
   return (
     <>
       <Row className={classes.main} id="main">
-        <Col className={classes.left}>
+        <Col xs={24} sm={24} md={12} lg={12} xl={12} className={classes.left}>
           <OfferLeft />
         </Col>
-        <Col className={classes.right}>
+        <Col xs={24} sm={24} md={12} lg={12} xl={12} className={classes.right}>
           <OfferRight />
         </Col>
       </Row>
       <Row className={classes.arrow}>
         <Col>
-          <BigArrow />
+          <img src={arrow} alt="big arrow" />
         </Col>
       </Row>
     </>

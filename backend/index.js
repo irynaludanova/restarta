@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 })
 
 app.post("/mail", (req, res) => {
-  const { name, email, message } = req.body
+  const { name, email, introduction, website } = req.body
   let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
@@ -39,7 +39,7 @@ app.post("/mail", (req, res) => {
     from: `${email}`,
     to: "irynaludanova@gmail.com",
     subject: "Message",
-    text: `Name:${name}, \nEmail:${email}, \nMessage:${message}`,
+    text: `Name:${name}, \nEmail:${email}, \nMessage:${introduction}, \nWebsite:${website}`,
   }
   transporter.sendMail(mailOptions, (error, res) => {
     verify()

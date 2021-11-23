@@ -1,0 +1,30 @@
+.clients {
+  display: block;
+  position: relative;
+  left: 42%;
+}
+
+.client {
+  position: absolute;
+  box-shadow: -7px 10px 18px -5px rgba(7, 31, 53, 0.69);
+  -webkit-box-shadow: -7px 10px 18px -5px rgba(7, 31, 53, 0.69);
+  -moz-box-shadow: -7px 10px 18px -5px rgba(7, 31, 53, 0.69);
+}
+.client:nth-child(1) {
+  margin-top: 18%;
+  left: 0%;
+  z-index: 3;
+  width: 26%;
+}
+.client:nth-child(2) {
+  margin-top: 28%;
+  left: 43%;
+  z-index: 0;
+  width: 22%;
+}
+.client:nth-child(3) {
+  margin-top: -7%;
+  left: 15%;
+  z-index: 1;
+  width: 34%;
+}

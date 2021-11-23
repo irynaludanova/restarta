@@ -1,21 +1,13 @@
 h1 {
-  font-size: 35px;
+  font-size: 2rem;
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-family: "Play", sans-serif;
-  font-weight: 700 !important;
-  hyphens: auto;
-}
+  /* font-family: "Kelly Slab", cursive; */
+  font-family: "Exo 2", sans-serif;
 
-.dark {
+  font-weight: 700 !important;
   color: #050930;
-  padding: 20px 0 20px 0;
-}
-.left {
-  display: flex;
-  flex-direction: column;
-  padding-left: 3rem;
-  z-index: 1;
+  padding: 10px 0 10px 0;
 }
 
 .mobile {
@@ -23,19 +15,29 @@ h1 {
 }
 
 .image {
-  width: 50%;
+  width: 110%;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
-  .left {
-    align-items: center;
+  .right {
+    display: none;
   }
+
   .mobile {
     display: flex;
     margin-top: 2rem;
     text-align: center;
   }
-  .image {
-    width: 84%;
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

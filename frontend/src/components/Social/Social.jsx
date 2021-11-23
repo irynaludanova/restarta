@@ -1,12 +1,11 @@
-import React from "react"
 import classes from "./Social.module.css"
 import { socialRoutes } from "../../store/routes"
 
 const Social = () => {
   return (
-    <>
+    <div className={classes.social}>
       <p>Наши контакты:</p>
-      <div className={classes.social}>
+      <div className={classes.items}>
         {socialRoutes.map((item, index) => {
           return (
             <a href={item.path} key={index}>
@@ -15,7 +14,7 @@ const Social = () => {
           )
         })}
       </div>
-    </>
+    </div>
   )
 }
 

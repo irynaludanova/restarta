@@ -1,0 +1,6 @@
+.contact {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 85vh;
+}

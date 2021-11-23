@@ -1,28 +1,28 @@
-import React from "react"
+import React, { useState } from "react"
+import { Routes, Route } from "react-router-dom"
 import "./App.css"
-import { Container, Col } from "react-bootstrap"
+import { Layout } from "antd"
 import Navigation from "./components/Navigation/Navigation"
 import Particles from "./animations/Particles/Particles"
-import Main from "./pages/Main/Main"
-import About from "./pages/About/About"
-import "bootstrap/dist/css/bootstrap.min.css"
-import Advantages from "./pages/Advantages/Advantages"
-import Questions from "./pages/Questions/Questions"
-import Finish from "./pages/Finish/Finish"
-
+import CustomFooter from "./pages/CustomFooter/CustomFooter"
+import Articles from "./pages/articles/Articles"
+import MainContent from "./pages/content/MainContent"
+const { Header, Footer } = Layout
 function App() {
   return (
-    <Container fluid className="app">
-      <Col>
-        <Particles bg={true} />
+    <Layout>
+      <Particles bg={true} />
+      <Header style={{ zIndex: 5, background: "transparent" }}>
         <Navigation />
-        <Main />
-        <About />
-        <Advantages />
-        <Questions />
-        <Finish />
-      </Col>
-    </Container>
+      </Header>
+      <Routes>
+        <Route path="/" element={<MainContent />}></Route>
+        <Route path="/articles" element={<Articles />}></Route>
+      </Routes>
+      <Footer>
+        <CustomFooter />
+      </Footer>
+    </Layout>
   )
 }
 

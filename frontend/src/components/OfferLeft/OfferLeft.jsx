@@ -3,19 +3,20 @@ import React from "react"
 import restarta from "./../../assets/images/restarta.png"
 import classes from "./OfferLeft.module.css"
 import OfferRight from "../OfferRight/OfferRight"
+import { Col } from "antd"
+
 const OfferLeft = () => {
   return (
-    <div className={classes.left}>
+    <Col className={classes.left}>
       <img className={classes.image} src={restarta} alt="Restart-A" />
-
-      <h1 className="dark">
+      <h1>
         перезагрузка <br></br>вашего сайта
       </h1>
       <Button>начать</Button>
       <div className={classes.mobile}>
         <OfferRight />
       </div>
-    </div>
+    </Col>
   )
 }
 

@@ -1,5 +1,4 @@
-.accordion {
-  width: 80%;
+.site-collapse-custom-collapse {
   margin-top: 0.5rem;
   box-shadow: -10px 13px 5px 0px rgba(2, 2, 102, 0.46);
   -webkit-box-shadow: -10px 13px 5px 0px rgba(2, 2, 102, 0.46);
@@ -8,15 +7,26 @@
 .item {
   background: #e5ebfd;
 }
-.header button {
+.headersite-collapse-custom-panel button {
   background: #20255c;
   color: white;
 }
 
-.header button::after {
+.site-collapse-custom-panel button::after {
   background: #20255c;
   color: white;
   background-color: white;
   background-image: url("./../../assets/images/expand-arrow.png");
   background-size: 1.25rem;
+}
+
+[data-theme="compact"]
+  .site-collapse-custom-collapse
+  .site-collapse-custom-panel,
+.site-collapse-custom-collapse .site-collapse-custom-panel {
+  margin-bottom: 24px;
+  overflow: hidden;
+  background: #e5ebfd;
+  border: 0px;
+  border-radius: 2px;
 }

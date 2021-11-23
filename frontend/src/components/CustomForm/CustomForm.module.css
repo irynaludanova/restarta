@@ -1,0 +1,20 @@
+.form {
+  margin-top: 3rem;
+}
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  background: #20255c;
+  color: white;
+  caret-color: #92a013;
+}
+.input:hover {
+  background: #52546d;
+  color: white;
+}

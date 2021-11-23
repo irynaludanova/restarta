@@ -18,6 +18,7 @@
   "author": "ludanova",
   "license": "ISC",
   "dependencies": {
+    "antd": "^4.16.13",
     "bcryptjs": "^2.4.3",
     "concurrently": "^6.4.0",
     "config": "^3.3.6",

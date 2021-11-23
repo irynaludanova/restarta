@@ -1,0 +1,70 @@
+.about {
+  position: relative;
+  width: 100%;
+  padding: 3rem;
+  flex-wrap: nowrap !important;
+  margin-top: -11rem;
+  margin-bottom: 1rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.image {
+  margin: 1rem;
+}
+
+.container {
+  box-shadow: -10px 13px 5px 0px rgba(2, 2, 102, 0.46);
+  -webkit-box-shadow: -10px 13px 5px 0px rgba(2, 2, 102, 0.46);
+  -moz-box-shadow: -10px 13px 5px 0px rgba(2, 2, 102, 0.46);
+  color: #010103;
+  padding: 2rem;
+  height: min-content;
+}
+
+.tab {
+  display: flex;
+}
+.cardcontainer {
+  width: 100%;
+}
+
+.cardcontainer > .ant-tabs-card .ant-tabs-tab-active,
+[data-theme="compact"] .cardcontainer > .ant-tabs-card .ant-tabs-tab-active {
+  background: #20255c;
+  border-color: transparent;
+  color: white;
+}
+.ant-tabs-nav-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.desc {
+  display: block;
+  position: relative;
+  color: black;
+}
+
+.picture {
+  position: absolute;
+  z-index: 200;
+  width: 36%;
+  top: 40%;
+  left: 48%;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 2rem;
+  }
+
+  .desc {
+    width: 100%;
+  }
+  .picture {
+    display: none;
+  }
+  .image {
+    width: 80%;
+  }
+}

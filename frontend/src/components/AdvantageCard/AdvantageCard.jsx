@@ -1,6 +1,6 @@
 import React from "react"
 import classes from "./AdvantageCard.module.css"
-import { Card } from "react-bootstrap"
+import { Card } from "antd"
 const AdvantageCard = ({ text }) => {
   return (
     <Card className={classes.container}>

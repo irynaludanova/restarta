@@ -1,21 +1,31 @@
 import React from "react"
 import { questionsStore } from "../../store/questionsStore"
-import { Accordion } from "react-bootstrap"
-import classes from "./Accord.module.css"
+import "./Accord.css"
+import { Collapse } from "antd"
+import { CaretRightOutlined } from "@ant-design/icons"
+const { Panel } = Collapse
 const Accord = () => {
   return (
-    <Accordion className={classes.accordion} defaultActiveKey="0">
+    <Collapse
+      bordered={false}
+      defaultActiveKey={["1"]}
+      expandIcon={({ isActive }) => (
+        <CaretRightOutlined rotate={isActive ? 90 : 0} />
+      )}
+      className="site-collapse-custom-collapse"
+    >
       {questionsStore.map((item, index) => {
         return (
-          <Accordion.Item className={classes.item} key={index} eventKey={index}>
-            <Accordion.Header className={classes.header}>
-              {item.questionText}
-            </Accordion.Header>
-            <Accordion.Body>{item.answerText}</Accordion.Body>
-          </Accordion.Item>
+          <Panel
+            header={item.questionText}
+            key={index}
+            className="site-collapse-custom-panel"
+          >
+            <p> {item.answerText}</p>
+          </Panel>
         )
       })}
-    </Accordion>
+    </Collapse>
   )
 }
 

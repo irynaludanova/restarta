@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  align-items: center;
+}
+.item {
+  text-align: center;
+  /* width: 3rem;
+  height: 4rem; */
+  background: #20255c;
+  margin: 6px;
+  padding: 4px;
+  border-radius: 3px;
+  color: white;
+}
+.item span {
+  padding: 1rem;
+}
+
+.items span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
