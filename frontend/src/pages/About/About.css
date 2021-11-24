@@ -6,6 +6,7 @@
   margin-top: -11rem;
   margin-bottom: 1rem;
   font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
 }
 
 .image {
@@ -23,6 +24,13 @@
 
 .tab {
   display: flex;
+  color: black;
+}
+.tab:hover {
+  color: #8d0703;
+}
+.tab:active {
+  color: white;
 }
 .cardcontainer {
   width: 100%;
@@ -49,7 +57,7 @@
   position: absolute;
   z-index: 200;
   width: 36%;
-  top: 40%;
+  top: 37%;
   left: 48%;
 }
 

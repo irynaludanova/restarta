@@ -12,7 +12,13 @@ const About = () => {
         <Col>
           <h3>
             о
-            <mark style={{ backgroundColor: "#20255c", color: "white" }}>
+            <mark
+              style={{
+                backgroundColor: "#20255c",
+                color: "white",
+                margin: "1rem",
+              }}
+            >
               нас
             </mark>
           </h3>

@@ -10,6 +10,7 @@ import Logo from "./../../components/Logo/Logo"
 import { routes } from "./../../store/routes"
 import { FaRegCopyright } from "react-icons/fa"
 import BackToTop from "../../UI/backToTop/BackToTop"
+
 const CustomFooter = () => {
   return (
     <Row className={classes.custom}>

@@ -5,7 +5,18 @@ import { BsTelephoneInbound } from "react-icons/bs"
 const OurContacts = () => {
   return (
     <div className={classes.contacts}>
-      <h2>Наши контакты:</h2>
+      <h2>
+        Наши
+        <mark
+          style={{
+            backgroundColor: "#20255c",
+            color: "white",
+            margin: "1rem",
+          }}
+        >
+          контакты:
+        </mark>
+      </h2>
 
       <div className={classes.items}>
         <h4>Обращайтесь любым удобным способом:</h4>

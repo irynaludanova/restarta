@@ -17,6 +17,7 @@ const Navigation = () => {
           <Logo />
         </Link>
       </Col>
+
       <Col span={17}>
         <div className={`panel ${isOpen ? "open" : "close"}`}>
           <ul className="menu">

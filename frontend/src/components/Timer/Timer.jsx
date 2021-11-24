@@ -44,7 +44,13 @@ const Timer = () => {
       <Col className={classes.container}>
         <h3>
           До Нового
-          <mark style={{ backgroundColor: "#20255c", color: "white" }}>
+          <mark
+            style={{
+              backgroundColor: "#20255c",
+              color: "white",
+              margin: "1rem",
+            }}
+          >
             2022
           </mark>
           года осталось:

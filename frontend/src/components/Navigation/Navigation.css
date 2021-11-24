@@ -1,3 +1,6 @@
+.nav {
+  margin-top: 2rem;
+}
 .panel {
   position: fixed;
   top: 0;
@@ -68,7 +71,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem -2rem 0 0;
   z-index: 2000;
   text-align: center;
   line-height: 3rem;

@@ -7,7 +7,15 @@ const Advantages = () => {
   return (
     <div id="advantage" className={classes.advantages}>
       <h3>
-        <mark style={{ backgroundColor: "#20255c", color: "white" }}>наши</mark>
+        <mark
+          style={{
+            backgroundColor: "#20255c",
+            color: "white",
+            margin: "1rem",
+          }}
+        >
+          наши
+        </mark>
         преимущества
       </h3>
 
