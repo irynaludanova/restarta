@@ -15,7 +15,7 @@
 }
 
 .left {
-  background-image: linear-gradient(#20255ce0, #20255c),
+  background-image: linear-gradient(#20255c7a, #191b57),
     url(./../../assets/images/bg_left.jpg);
   background-position: top;
   background-repeat: repeat, no-repeat;

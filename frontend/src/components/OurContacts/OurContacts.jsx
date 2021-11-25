@@ -8,13 +8,7 @@ const OurContacts = () => {
     <div className={classes.contacts}>
       <h2>
         <FormattedMessage id="contact_title_1" />
-        <mark
-          style={{
-            backgroundColor: "#20255c",
-            color: "white",
-            margin: "1rem",
-          }}
-        >
+        <mark>
           <FormattedMessage id="contact_title_2" />
         </mark>
       </h2>

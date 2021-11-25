@@ -14,9 +14,9 @@ const AboutImageWords = () => {
           writingMode: item.orientation,
         }
         return (
-          <h2 className={classes.word} key={index} style={style}>
+          <div className={classes.word} key={index} style={style}>
             {item.text}
-          </h2>
+          </div>
         )
       })}
     </div>

@@ -7,31 +7,19 @@ import { FormattedMessage } from "react-intl"
 const Advantages = () => {
   return (
     <div id="advantage" className={classes.advantages}>
-      <h3>
-        <mark
-          style={{
-            backgroundColor: "#20255c",
-            color: "white",
-            margin: "1rem",
-          }}
-        >
+      <h2 className={classes.desc}>
+        <mark>
           <FormattedMessage id="adv_title_1" />
         </mark>
         <FormattedMessage id="adv_title_2" />
-      </h3>
+      </h2>
 
       <Row>
         <div className={classes.advantage}>
-          {advantageStore.map(({ key1, key2, key3, index }) => {
+          {advantageStore.map(({ key1, index }) => {
             return (
               <Col xs={24} sm={24} md={12} lg={8} xl={6}>
-                <AdvantageCard
-                  key={index}
-                  key1={key1}
-                  key2={key2}
-                  key3={key3}
-                  className={classes.card}
-                />
+                <AdvantageCard key={index} id={key1} className={classes.card} />
               </Col>
             )
           })}

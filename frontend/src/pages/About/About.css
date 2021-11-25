@@ -5,10 +5,11 @@
   flex-wrap: nowrap !important;
   margin-top: -11rem;
   margin-bottom: 1rem;
-  font-family: "Ubuntu", sans-serif;
   font-weight: bold;
 }
-
+.black {
+  color: black;
+}
 .image {
   margin: 1rem;
 }
@@ -25,6 +26,7 @@
 .tab {
   display: flex;
   color: black;
+  white-space: pre-line;
 }
 .tab:hover {
   color: #8d0703;
@@ -51,6 +53,7 @@
   display: block;
   position: relative;
   color: black;
+  white-space: pre-line;
 }
 
 .picture {
@@ -64,6 +67,7 @@
 @media (max-width: 768px) {
   .about {
     padding: 2rem;
+    margin-top: 0;
   }
 
   .desc {

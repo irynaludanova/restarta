@@ -13,19 +13,23 @@ const Navigation = (props) => {
 
   return (
     <Row justify="space-between" className="nav">
-      <Col xs={{ span: 12 }} lg={{ span: 4 }}>
+      <Col xs={{ span: 12 }} md={{ span: 8 }} lg={{ span: 6 }}>
         <Link smooth to="#main">
           <Logo />
         </Link>
       </Col>
-      <Col xs={{ span: 3 }} lg={{ span: 4, offset: 12 }}>
+      <Col
+        xs={{ span: 3 }}
+        md={{ span: 2, offset: 8 }}
+        lg={{ span: 2, offset: 12 }}
+      >
         <Locale
           currentLocale={props.currentLocale}
           handleChange={props.handleChange}
         />
       </Col>
 
-      <Col xs={{ span: 9 }} lg={{ span: 4 }}>
+      <Col xs={{ span: 9 }} md={{ span: 6 }} lg={{ span: 4 }}>
         <div className={`panel ${isOpen ? "open" : "close"}`}>
           <ul className="menu">
             {routes.map(({ id, key, path }) => {

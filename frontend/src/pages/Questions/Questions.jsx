@@ -8,20 +8,20 @@ const Questions = () => {
     <div id="questions" className={classes.questions}>
       <Row>
         <Col>
-          <h3>
-            <mark style={{ backgroundColor: "#20255c", color: "white" }}>
+          <h2 className={classes.desc}>
+            <mark>
               <FormattedMessage id="quest_title_1" />
             </mark>
             <FormattedMessage id="quest_title_2" />
-            <mark style={{ backgroundColor: "#20255c", color: "white" }}>
+            <mark>
               <FormattedMessage id="quest_title_3" />
             </mark>
             <FormattedMessage id="quest_title_4" />
-            <mark style={{ backgroundColor: "#20255c", color: "white" }}>
+            <mark>
               <FormattedMessage id="quest_title_5" />
             </mark>
             <FormattedMessage id="quest_title_6" />
-          </h3>
+          </h2>
         </Col>
       </Row>
       <Row justify="center">

@@ -5,11 +5,11 @@ import classes from "./ContactDescription.module.css"
 const ContactDescription = () => {
   const text = <FormattedMessage id="badge" />
   return (
-    <Badge.Ribbon color="#20255c" text={text}>
+    <Badge.Ribbon color="#20255c" text={text} className={classes.badge}>
       <Card className={classes.card}>
-        <span>
+        <p className={classes.desc}>
           <FormattedMessage id="contact_desc" />
-        </span>
+        </p>
       </Card>
     </Badge.Ribbon>
   )

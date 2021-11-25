@@ -1,11 +1,7 @@
 h1 {
-  font-size: 2rem;
   letter-spacing: 4px;
-  text-transform: uppercase;
-  font-family: "Exo 2", sans-serif;
-  font-weight: 700 !important;
+  padding: 0;
   color: white;
-  padding: 10px 0 10px 0;
 }
 
 a {
@@ -16,7 +12,7 @@ a {
 }
 
 .image {
-  width: 110%;
+  width: 100%;
   margin-bottom: 1rem;
 }
 
@@ -29,10 +25,24 @@ a {
     display: flex;
     margin-top: 2rem;
     text-align: center;
+    position: relative;
   }
+  .particles {
+    display: block;
+    height: 46vh !important;
+    width: 100%;
+  }
+  .canvas {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 30rem;
+  }
+
   h1 {
     text-align: center;
-    color: white;
     font-size: 1.5rem;
   }
   .left {

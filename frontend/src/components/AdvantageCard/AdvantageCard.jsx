@@ -13,15 +13,9 @@ const AdvantageCard = (props) => {
         <span></span>
 
         <div className={classes.content}>
-          <p>
-            <FormattedMessage id={props.key1} />
-            <p>
-              <FormattedMessage id={props.key2} />
-            </p>
-            <p>
-              <FormattedMessage id={props.key3} />
-            </p>
-          </p>
+          <h3 className={classes.white}>
+            <FormattedMessage id={props.id} />
+          </h3>
         </div>
       </div>
     </Card>

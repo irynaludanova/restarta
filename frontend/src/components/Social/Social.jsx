@@ -7,15 +7,17 @@ const Social = () => {
       <p>
         <FormattedMessage id="our_contacts" />
       </p>
-      <div className={classes.items}>
+      <ul className={classes.items}>
         {socialRoutes.map((item, index) => {
           return (
-            <a href={item.path} key={index}>
-              {item.component}
-            </a>
+            <li className={classes.links}>
+              <a href={item.path} key={index}>
+                {item.component}
+              </a>
+            </li>
           )
         })}
-      </div>
+      </ul>
     </div>
   )
 }

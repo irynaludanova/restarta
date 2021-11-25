@@ -11,6 +11,9 @@
   background: #20255c;
   color: white;
 }
+.site-collapse-custom-panel {
+  white-space: pre-line;
+}
 
 .site-collapse-custom-panel button::after {
   background: #20255c;

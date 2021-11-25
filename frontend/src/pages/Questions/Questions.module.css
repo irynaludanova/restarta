@@ -2,7 +2,9 @@
   min-height: 100vh;
   margin: 3rem;
 }
-
+.desc {
+  color: black;
+}
 @media (max-width: 768px) {
   .questions {
     margin: 0 auto;

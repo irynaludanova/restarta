@@ -8,6 +8,7 @@ import Questions from "../Questions/Questions"
 import AnchorLink from "../../UI/anchor/AnchorLink"
 import ContactForm from "../ContactForm/ContactForm"
 import Contacts from "../Contacts/Contacts"
+import classes from "./MainContent.module.css"
 const { Content } = Layout
 
 const MainContent = () => {
@@ -15,7 +16,7 @@ const MainContent = () => {
     <Content>
       <Main />
       <Row justify="end">
-        <Col>
+        <Col className={classes.anchor}>
           <AnchorLink />
         </Col>
       </Row>

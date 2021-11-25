@@ -47,17 +47,9 @@ const Timer = () => {
   return (
     <Row justify="center">
       <Col className={classes.container}>
-        <h3>
+        <h3 style={{ textAlign: "center" }}>
           <FormattedMessage id="timer_desc_1" />
-          <mark
-            style={{
-              backgroundColor: "#20255c",
-              color: "white",
-              margin: "1rem",
-            }}
-          >
-            2022
-          </mark>
+          <mark>2022</mark>
           <FormattedMessage id="timer_desc_2" />
         </h3>
         <div className={classes.timer}>

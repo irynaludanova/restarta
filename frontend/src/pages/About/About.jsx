@@ -12,18 +12,12 @@ const About = () => {
     <div className="about" id="about">
       <Row>
         <Col>
-          <h3>
+          <h2 className="black">
             <FormattedMessage id="about_1" />
-            <mark
-              style={{
-                backgroundColor: "#20255c",
-                color: "white",
-                margin: "1rem",
-              }}
-            >
+            <mark>
               <FormattedMessage id="about_2" />
             </mark>
-          </h3>
+          </h2>
           <img src={restarta} alt="Restart-A" className="image" />
         </Col>
       </Row>

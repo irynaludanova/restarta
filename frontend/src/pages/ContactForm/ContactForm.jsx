@@ -11,13 +11,7 @@ const Contact = () => {
         <Col>
           <h2>
             <FormattedMessage id="contact_form_title_1" />
-            <mark
-              style={{
-                backgroundColor: "#20255c",
-                color: "white",
-                margin: "1rem",
-              }}
-            >
+            <mark>
               <FormattedMessage id="contact_form_title_2" />
             </mark>
             ?

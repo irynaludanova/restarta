@@ -1,7 +1,21 @@
 .card {
   padding: 1rem;
   margin-top: 2rem;
+  white-space: pre-line;
   box-shadow: -10px 13px 5px 0px rgba(2, 2, 102, 0.46);
   -webkit-box-shadow: -10px 13px 5px 0px rgba(2, 2, 102, 0.46);
   -moz-box-shadow: -10px 13px 5px 0px rgba(2, 2, 102, 0.46);
+}
+
+.badge {
+  box-shadow: -6px 6px 7px 0px rgba(2, 2, 102, 0.46);
+  -webkit-box-shadow: -6px 6px 7px 0px rgba(2, 2, 102, 0.46);
+  -moz-box-shadow: -6px 6px 7px 0px rgba(2, 2, 102, 0.46);
+  padding: 0.3rem 2.5rem 1.5rem 2rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.desc {
+  line-height: 1.5rem;
 }
