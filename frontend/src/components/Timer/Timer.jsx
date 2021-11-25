@@ -1,5 +1,6 @@
 import { Col, Row } from "antd"
 import React, { useEffect, useState } from "react"
+import { FormattedMessage } from "react-intl"
 import classes from "./Timer.module.css"
 const Timer = () => {
   const calculateTimeLeft = () => {
@@ -10,20 +11,24 @@ const Timer = () => {
       timeLeft = [
         {
           id: 1,
-          text: "Дней",
+          text: <FormattedMessage id="timer_d" />,
           value: Math.floor(difference / (1000 * 60 * 60 * 24)),
         },
         {
           id: 2,
-          text: "Часов",
+          text: <FormattedMessage id="timer_h" />,
           value: Math.floor((difference / (1000 * 60 * 60)) % 24),
         },
         {
           id: 3,
-          text: "Минут",
+          text: <FormattedMessage id="timer_m" />,
           value: Math.floor((difference / 1000 / 60) % 60),
         },
-        { id: 4, text: "Секунд", value: Math.floor((difference / 1000) % 60) },
+        {
+          id: 4,
+          text: <FormattedMessage id="timer_s" />,
+          value: Math.floor((difference / 1000) % 60),
+        },
       ]
     }
 
@@ -43,7 +48,7 @@ const Timer = () => {
     <Row justify="center">
       <Col className={classes.container}>
         <h3>
-          До Нового
+          <FormattedMessage id="timer_desc_1" />
           <mark
             style={{
               backgroundColor: "#20255c",
@@ -53,7 +58,7 @@ const Timer = () => {
           >
             2022
           </mark>
-          года осталось:
+          <FormattedMessage id="timer_desc_2" />
         </h3>
         <div className={classes.timer}>
           {timeLeft.map((item, index) => {

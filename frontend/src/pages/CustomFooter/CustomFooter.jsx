@@ -10,7 +10,7 @@ import Logo from "./../../components/Logo/Logo"
 import { routes } from "./../../store/routes"
 import { FaRegCopyright } from "react-icons/fa"
 import BackToTop from "../../UI/backToTop/BackToTop"
-
+import { FormattedMessage } from "react-intl"
 const CustomFooter = () => {
   return (
     <Row className={classes.custom}>
@@ -27,10 +27,10 @@ const CustomFooter = () => {
       </Col>
       <Col span={7}>
         <ul className={classes.links}>
-          {routes.map((item, index) => {
+          {routes.map(({ id, key, path }) => {
             return (
-              <Link key={index} smooth to={item.path} className={classes.link}>
-                {item.component}
+              <Link key={id} smooth to={path} className={classes.link}>
+                <FormattedMessage id={key} />
               </Link>
             )
           })}

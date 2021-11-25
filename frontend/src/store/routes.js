@@ -3,12 +3,36 @@ import { FaViber } from "react-icons/fa"
 import { FaTelegram } from "react-icons/fa"
 import { SiGmail } from "react-icons/si"
 export const routes = [
-  { id: 1, path: "#main", exact: true, component: "Главная" },
-  { id: 2, path: "#about", exact: true, component: "О нас" },
-  { id: 3, path: "#advantage", exact: true, component: "Почему мы" },
-  { id: 4, path: "#questions", exact: true, component: "ЧаВо" },
-  { id: 5, path: "#form", exact: true, component: "Оставить заявку" },
-  { id: 6, path: "#contact", exact: true, component: "Наши контакты" },
+  { id: 1, path: "#main", exact: true, component: "Главная", key: "main" },
+  { id: 2, path: "#about", exact: true, component: "О нас", key: "about" },
+  {
+    id: 3,
+    path: "#advantage",
+    exact: true,
+    component: "Почему мы",
+    key: "advantage",
+  },
+  {
+    id: 4,
+    path: "#questions",
+    exact: true,
+    component: "ЧаВо",
+    key: "questions",
+  },
+  {
+    id: 5,
+    path: "#form",
+    exact: true,
+    component: "Оставить заявку",
+    key: "form",
+  },
+  {
+    id: 6,
+    path: "#contact",
+    exact: true,
+    component: "Наши контакты",
+    key: "contact",
+  },
 ]
 
 export const socialRoutes = [

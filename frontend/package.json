@@ -31,7 +31,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "extract": "formatjs extract"
   },
   "eslintConfig": {
     "extends": [
@@ -56,5 +57,8 @@
     "transformIgnorePatterns": [
       "/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-formatjs": "^10.3.11"
   }
 }

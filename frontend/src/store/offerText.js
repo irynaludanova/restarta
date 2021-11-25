@@ -1,5 +1,5 @@
 export const offerText = [
-  { id: 1, text: "редизайн" },
-  { id: 2, text: "оптимизация" },
-  { id: 3, text: "интерактивность" },
+  { id: 1, key: "design" },
+  { id: 2, key: "optimization" },
+  { id: 3, key: "inter" },
 ]

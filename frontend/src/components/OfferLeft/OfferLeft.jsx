@@ -12,11 +12,11 @@ const OfferLeft = () => {
       <h1>
         <FormattedMessage id="reboot" />
       </h1>
-      <h1>
-        <FormattedMessage id="site" />
-      </h1>
+
       <Button>
-        <a href="#form">начать</a>
+        <a href="#form">
+          <FormattedMessage id="startbutton" />
+        </a>
       </Button>
       <div className={classes.mobile}>
         <OfferRight />

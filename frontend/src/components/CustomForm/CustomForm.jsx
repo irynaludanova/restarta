@@ -2,6 +2,7 @@ import { React, useState } from "react"
 import { Form, Input, Row, Col } from "antd"
 import Button from "../../UI/button/Button"
 import classes from "./CustomForm.module.css"
+import { FormattedMessage } from "react-intl"
 const CustomForm = () => {
   const [email, setEmail] = useState("")
   const [name, setName] = useState("")
@@ -58,6 +59,9 @@ const CustomForm = () => {
   const onChangeWebsite = (e) => {
     setWebsite(e.target.value)
   }
+  const nameLabel = <FormattedMessage id="name_key" />
+  const messageLabel = <FormattedMessage id="message_label" />
+  const siteLabel = <FormattedMessage id="site_key" />
   return (
     <Form
       {...layout}
@@ -68,19 +72,14 @@ const CustomForm = () => {
     >
       <Form.Item
         name={["user", "name"]}
-        label="Имя"
+        label={nameLabel}
         rules={[
           {
             required: true,
           },
         ]}
       >
-        <Input
-          value={name}
-          onChange={onChangeName}
-          placeholder="Иван"
-          className={classes.input}
-        />
+        <Input value={name} onChange={onChangeName} className={classes.input} />
       </Form.Item>
       <Form.Item
         name={["user", "email"]}
@@ -99,7 +98,7 @@ const CustomForm = () => {
         />
       </Form.Item>
 
-      <Form.Item name={["user", "website"]} label="Сайт">
+      <Form.Item name={["user", "website"]} label={siteLabel}>
         <Input
           value={website}
           placeholder="https://example.com"
@@ -107,7 +106,7 @@ const CustomForm = () => {
           className={classes.input}
         />
       </Form.Item>
-      <Form.Item name={["user", "introduction"]} label="Сообщение">
+      <Form.Item name={["user", "introduction"]} label={messageLabel}>
         <Input.TextArea
           value={introduction}
           onChange={onChangeIntroduction}
@@ -118,7 +117,7 @@ const CustomForm = () => {
         <Col span={24}>
           <Form.Item>
             <Button htmltype="submit" onClick={onFinish}>
-              Отправить
+              <FormattedMessage id="send" />
             </Button>
           </Form.Item>
         </Col>

@@ -28,5 +28,8 @@
     "nodemailer": "^6.7.1",
     "nodemon": "^2.0.15",
     "xoauth2": "^1.2.0"
+  },
+  "devDependencies": {
+    "@formatjs/cli": "^4.4.0"
   }
 }

@@ -3,6 +3,7 @@ import { questionsStore } from "../../store/questionsStore"
 import "./Accord.css"
 import { Collapse } from "antd"
 import { CaretRightOutlined } from "@ant-design/icons"
+import { FormattedMessage } from "react-intl"
 const { Panel } = Collapse
 const Accord = () => {
   return (
@@ -14,14 +15,17 @@ const Accord = () => {
       )}
       className="site-collapse-custom-collapse"
     >
-      {questionsStore.map((item, index) => {
+      {questionsStore.map(({ id, key_q, key_a }) => {
+        const header = <FormattedMessage id={key_q} />
         return (
           <Panel
-            header={item.questionText}
-            key={index}
+            header={header}
+            key={id}
             className="site-collapse-custom-panel"
           >
-            <p> {item.answerText}</p>
+            <p>
+              <FormattedMessage id={key_a} />
+            </p>
           </Panel>
         )
       })}

@@ -1,5 +1,8 @@
 import React from "react"
 import "./TextAnimations.css"
+import { FormattedMessage } from "react-intl"
+import { offerText } from "./../../store/offerText"
+
 export default function TextAnimations({ children }) {
   const text = children
 
@@ -7,9 +10,13 @@ export default function TextAnimations({ children }) {
 
   return (
     <div className="animate one">
-      {array.map((item, index) => (
-        <span key={index}>{item}</span>
-      ))}
+      {offerText.map(({ id, key }) => {
+        return (
+          <span key={id}>
+            <FormattedMessage id={key} />
+          </span>
+        )
+      })}
     </div>
   )
 }

@@ -10,14 +10,16 @@ import MainContent from "./pages/content/MainContent"
 import { IntlProvider } from "react-intl"
 import { LOCALES } from "./i18n/locales"
 import { messages } from "./i18n/messages"
-import Locale from "./components/Locale/Locale"
+
 const { Header, Footer } = Layout
 function App() {
-  const handleChange = ({ target: { value } }) => {
-    setCurrentLocale(value)
-    localStorage.setItem("locale", value)
-  }
   const [currentLocale, setCurrentLocale] = useState(getInitialLocale())
+
+  const handleChange = (e) => {
+    e.preventDefault()
+    setCurrentLocale(e.target.value)
+    localStorage.setItem("locale", e.target.value)
+  }
 
   function getInitialLocale() {
     const savedLocale = localStorage.getItem("locale")
@@ -27,17 +29,15 @@ function App() {
     <IntlProvider
       messages={messages[currentLocale]}
       locale={currentLocale}
-      defaultLocale={LOCALES.ENGLISH}
+      defaultLocale={LOCALES.RUSSIAN}
     >
       <Layout>
         <Particles bg={true} />
-        <Header
-          style={{ zIndex: 5, background: "transparent" }}
-          currentLocale={currentLocale}
-          handleChange={handleChange}
-        >
-          <Locale currentLocale={currentLocale} handleChange={handleChange} />
-          <Navigation />
+        <Header style={{ zIndex: 5, background: "transparent" }}>
+          <Navigation
+            currentLocale={currentLocale}
+            handleChange={handleChange}
+          />
         </Header>
 
         <Routes>

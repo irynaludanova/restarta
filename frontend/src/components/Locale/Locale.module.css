@@ -1,4 +1,9 @@
 .switcher select {
-  width: 99px;
-  height: 30px;
+  width: 4rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #fff;
 }

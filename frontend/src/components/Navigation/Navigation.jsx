@@ -6,31 +6,38 @@ import { GrClose } from "react-icons/gr"
 import Logo from "../Logo/Logo"
 import { routes } from "../../store/routes"
 import { Row, Col } from "antd"
-
-const Navigation = () => {
+import Locale from "./../Locale/Locale"
+import { FormattedMessage } from "react-intl"
+const Navigation = (props) => {
   const [isOpen, setOpen] = useState(false)
 
   return (
-    <Row justify="space-around" className="nav">
-      <Col xs={6} sm={6} md={4} lg={4} xl={4}>
+    <Row justify="space-between" className="nav">
+      <Col xs={{ span: 12 }} lg={{ span: 4 }}>
         <Link smooth to="#main">
           <Logo />
         </Link>
       </Col>
+      <Col xs={{ span: 3 }} lg={{ span: 4, offset: 12 }}>
+        <Locale
+          currentLocale={props.currentLocale}
+          handleChange={props.handleChange}
+        />
+      </Col>
 
-      <Col span={17}>
+      <Col xs={{ span: 9 }} lg={{ span: 4 }}>
         <div className={`panel ${isOpen ? "open" : "close"}`}>
           <ul className="menu">
-            {routes.map((item, index) => {
+            {routes.map(({ id, key, path }) => {
               return (
                 <Link
-                  key={index}
+                  key={id}
                   className="link"
                   onClick={() => setOpen(!isOpen)}
                   smooth
-                  to={item.path}
+                  to={path}
                 >
-                  {item.component}
+                  <FormattedMessage id={key} />
                 </Link>
               )
             })}

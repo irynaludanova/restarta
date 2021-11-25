@@ -1,10 +1,12 @@
 import classes from "./Social.module.css"
 import { socialRoutes } from "../../store/routes"
-
+import { FormattedMessage } from "react-intl"
 const Social = () => {
   return (
     <div className={classes.social}>
-      <p>Наши контакты:</p>
+      <p>
+        <FormattedMessage id="our_contacts" />
+      </p>
       <div className={classes.items}>
         {socialRoutes.map((item, index) => {
           return (

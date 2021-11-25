@@ -3,13 +3,14 @@ import { Col, Row } from "antd"
 import classes from "./ContactForm.module.css"
 import ContactDescription from "../../components/ContactDescription/ContactDescription"
 import CustomForm from "../../components/CustomForm/CustomForm"
+import { FormattedMessage } from "react-intl"
 const Contact = () => {
   return (
     <div id="form" className={classes.container}>
       <Row>
         <Col>
           <h2>
-            Готовы к
+            <FormattedMessage id="contact_form_title_1" />
             <mark
               style={{
                 backgroundColor: "#20255c",
@@ -17,7 +18,7 @@ const Contact = () => {
                 margin: "1rem",
               }}
             >
-              переменам
+              <FormattedMessage id="contact_form_title_2" />
             </mark>
             ?
           </h2>

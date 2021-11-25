@@ -2,11 +2,12 @@ import React from "react"
 import classes from "./OurContacts.module.css"
 import { socialRoutes } from "../../store/routes"
 import { BsTelephoneInbound } from "react-icons/bs"
+import { FormattedMessage } from "react-intl"
 const OurContacts = () => {
   return (
     <div className={classes.contacts}>
       <h2>
-        Наши
+        <FormattedMessage id="contact_title_1" />
         <mark
           style={{
             backgroundColor: "#20255c",
@@ -14,16 +15,18 @@ const OurContacts = () => {
             margin: "1rem",
           }}
         >
-          контакты:
+          <FormattedMessage id="contact_title_2" />
         </mark>
       </h2>
 
       <div className={classes.items}>
-        <h4>Обращайтесь любым удобным способом:</h4>
+        <h4>
+          <FormattedMessage id="contact_text_1" />
+        </h4>
 
         <a href="tel:+380980438385" className={classes.link}>
           <BsTelephoneInbound />
-          Позвоните нам! +38(098)043 83 85
+          <FormattedMessage id="contact_text_2" />
         </a>
         {socialRoutes.map((item, index) => {
           return (

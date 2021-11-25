@@ -1,17 +1,16 @@
 export const advantageStore = [
   {
     id: 1,
-    text1: "небольшая команда",
-    text2: "==",
-    text3: "быстрая и качественная работа",
+    key1: "adv_text_1_1",
+    key2: "adv_text_1_2",
+    key3: "adv_text_1_3",
   },
   {
     id: 2,
-    text1: "разработка проекта",
-    text2: "в",
-    text3: "диалоге с заказчиком",
+    key1: "adv_text_2_1",
+    key2: "adv_text_2_2",
+    key3: "adv_text_2_3",
   },
-  { id: 3, text1: "индивидуальный", text2: "и", text3: "творческий подход" },
-  { id: 4, text1: "использование", text2: "современных", text3: "технологий" },
-  { id: 5, text1: "дружелюбная", text2: "поддержка", text3: "24/7" },
+  { id: 3, key1: "adv_text_3_1", key2: "adv_text_3_2", key3: "технологий" },
+  { id: 4, key1: "adv_text_4_1", key2: "adv_text_4_2", key3: "adv_text_4_3" },
 ]

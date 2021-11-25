@@ -1,7 +1,9 @@
 import React from "react"
 import classes from "./AdvantageCard.module.css"
 import { Card } from "antd"
-const AdvantageCard = ({ text }) => {
+import { FormattedMessage } from "react-intl"
+
+const AdvantageCard = (props) => {
   return (
     <Card className={classes.container}>
       <div className={classes.box}>
@@ -11,9 +13,15 @@ const AdvantageCard = ({ text }) => {
         <span></span>
 
         <div className={classes.content}>
-          <p>{text.text1}</p>
-          <p>{text.text2}</p>
-          <p>{text.text3}</p>
+          <p>
+            <FormattedMessage id={props.key1} />
+            <p>
+              <FormattedMessage id={props.key2} />
+            </p>
+            <p>
+              <FormattedMessage id={props.key3} />
+            </p>
+          </p>
         </div>
       </div>
     </Card>
