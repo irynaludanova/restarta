@@ -16,7 +16,7 @@
 
 .left {
   background-image: linear-gradient(#20255c7a, #191b57),
-    url(./../../assets/images/bg_left.jpg);
+    url(./../../assets/images/bg_left.webp);
   background-position: top;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;

@@ -55,7 +55,7 @@ const Timer = () => {
         <div className={classes.timer}>
           {timeLeft.map((item, index) => {
             return (
-              <div className={classes.items}>
+              <div key={index} className={classes.items}>
                 <span key={item.id + 5}>{item.text}</span>
                 <div className={classes.item}>
                   <span key={index}>{item.value}</span>

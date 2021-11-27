@@ -1,24 +1,11 @@
 .site-collapse-custom-collapse {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   box-shadow: -10px 13px 5px 0px rgba(2, 2, 102, 0.46);
   -webkit-box-shadow: -10px 13px 5px 0px rgba(2, 2, 102, 0.46);
   -moz-box-shadow: -10px 13px 5px 0px rgba(2, 2, 102, 0.46);
 }
-.item {
-  background: #e5ebfd;
-}
-.headersite-collapse-custom-panel button {
-  background: #20255c;
-  color: white;
-}
-.site-collapse-custom-panel {
-  white-space: pre-line;
-}
 
 .site-collapse-custom-panel button::after {
-  background: #20255c;
-  color: white;
-  background-color: white;
   background-image: url("./../../assets/images/expand-arrow.png");
   background-size: 1.25rem;
 }
@@ -27,9 +14,20 @@
   .site-collapse-custom-collapse
   .site-collapse-custom-panel,
 .site-collapse-custom-collapse .site-collapse-custom-panel {
-  margin-bottom: 24px;
+  color: white;
+  margin-bottom: 6px;
+  white-space: pre-line;
   overflow: hidden;
-  background: #e5ebfd;
+  background: #20255c;
   border: 0px;
   border-radius: 2px;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  color: white;
+  font-size: 1.1rem;
+}
+.anticon,
+.ant-collapse-content-box,
+.ant-collapse-header {
+  color: white;
 }

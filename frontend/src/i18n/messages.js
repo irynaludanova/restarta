@@ -48,12 +48,32 @@ export const messages = {
     quest_question_3: "How do I know if my site needs a redesign?",
     quest_answer_3:
       "At your request, we analyze the current site. \n It's free! \nAs a result, you will receive a report on the main points of your site's efficiency (design, seo-optimization, loading speed, etc.) and constructive suggestions for improving these parameters. \nThen you decide what you want to change.",
+    quest_question_4: "How long does it take to create a website?",
+    quest_answer_4:
+      "As a rule, the customer receives a finished website in 1-2 months after the start of work. \n At the same time, everything depends on the scale of the project and the complexity of the task. \n Creation of a small site can take about a week, the development of portals can take more than half a year.",
+
+    quest_question_5:
+      "What if I am not satisfied with the result of work on the site?",
+    quest_answer_5:
+      "We carefully study all your requirements and, in accordance with them, create design layouts. \n Before starting work, we agree on all the nuances of design and functionality. \n In the process of creating a design, you can make adjustments to the created project.",
+
+    quest_question_6:
+      "Will I be able to add new information to the site myself?",
+    quest_answer_6:
+      "You can update the site data yourself. \n To make changes correctly, we will teach you or your employees the basic skills of maintaining a site. \n At the same time, there are various factors that affect the ability to independently enter information, it all depends on what kind of site is being prepared. \n Such nuances are discussed even before the creation of the site.",
+
+    quest_question_7: "Are there any guarantees for the site?",
+    quest_answer_7:
+      "We provide a guarantee of our sites for six months. If errors made by us are found, corrections are made free of charge. \n The warranty is valid if you have not yourself made changes to the project code. \n In addition, we provide full technical support for the site.",
     contact_form_title_1: "ready for a",
     contact_form_title_2: "change",
     contact_desc:
       "Haven't decided yet if it's time to work on the site? \nOr not sure if do you need to change anything at all? \nLeave a request with the address of the current website.We will analyze your site and give a detailed report on what and how you can change. \n It's completely FREE and does not bind you to anything.\n A further - you decide.",
     badge: "free",
-    send: "send",
+    start: "send a message ",
+    finish: "message sent ",
+    formMessage: "Thank you for your application!",
+    fill: 'To send an application, please fill in the required fields ("Name" and "Email")',
     name_key: "Name",
     site_key: "Site",
     message_label: "Message",
@@ -116,12 +136,31 @@ export const messages = {
     quest_question_3: "Как понять, нужен ли моему сайту редизайн?",
     quest_answer_3:
       "По Вашей заявке мы проводим анализ действующего сайта.\n Это бесплатно!\n В результате Вы получите отчет по основным пунктам эффективности Вашего сайта( дизайн, seo-оптимизация, скорость загрузки и т.д) и конструктивные предложения по улучшению этих параметров.\n Далее Вы сами решаете, что хотите изменить.",
+    quest_question_4: "В какие сроки осуществляется создание сайта?",
+    quest_answer_4:
+      "Как правило, заказчик получает готовый сайт через 1-2 месяца после начала работы.\n В то же время, все зависит от масштабов проекта и сложности поставленной задачи. \nСоздание небольшого сайта может занять около недели, зазработка порталов может длиться более полугода.",
+
+    quest_question_5: "Что, если меня не устроит результат работы над сайтом?",
+    quest_answer_5:
+      "Мы тщательно изучаем все ваши требования и в соответствии с ними создаем дизайн-макеты.\n Перед тем, как приступить к работе, согласовываем все нюансы по дизайну и функционалу.\n В процессе создания дизайна вы можете вносить корректировки в созданный проект.",
+
+    quest_question_6:
+      "Смогу ли я вносить новую информацию на сайт самостоятельно?",
+    quest_answer_6:
+      "Обновлять данные сайта можно самостоятельно. \n Для корректного внесения изменений мы обучим Вас либо Ваших сотрудников базовым навыкам ведения сайта.\n При этом, существуют различные факторы, влияющие на возможность самостоятельного внесения информации, все зависит от того, какой именно сайт готовится. \n Такие нюансы обсуждаются еще до создания сайта.",
+
+    quest_question_7: "Есть ли какие-то гарантии на сайт?",
+    quest_answer_7:
+      "Мы обеспечиваем гарантией наши сайты на протяжении шести месяцев. При обнаружении ошибок, допущенных нами, исправления вносятся бесплатно.\n Гарантия действует в том случае, если вы самостоятельно не вносили изменения в код проекта.\n Кроме того, мы осуществляем полную техническую поддержку сайта.",
     contact_form_title_1: "Готовы к",
     contact_form_title_2: "переменам",
     contact_desc:
       "Еще не решили, пора ли поработать над сайтом?\n Или не уверены, что вообще что-то нужно менять?\n Оставьте заявку с указанием адреса действующего сайта.\n Мы проанализируем Ваш сайт и дадим подробный отчет , что и как можно изменить. \nЭто совершенно БЕСПЛАТНО и ни к чему Вас не обязывает.\n А дальше - решать Вам.",
     badge: "бесплатно",
-    send: "отправить",
+    start: "отправить",
+    finish: "отправлено",
+    formMessage: "Спасибо за заявку!",
+    fill: 'Для отправки заявки заполните, пожалуйста, обязательные поля("Имя" и "Email")',
     name_key: "Имя",
     site_key: "Сайт",
     message_label: "Сообщение",
@@ -168,7 +207,7 @@ export const messages = {
     adv_title_2: "переваги",
     adv_text_1: "невелика команда \n ==\n швидка та якісна робота",
     adv_text_2: "розробка проекта \n в \n диалозі з замовником",
-    adv_text_3: "використання \n сучасних \n технологий",
+    adv_text_3: "використання \n сучасних \n технологій",
     adv_text_4: "доброзичлива \n підтримка \n 24/7",
     quest_title_1: " ЧА",
     quest_title_2: "сті",
@@ -179,18 +218,39 @@ export const messages = {
     quest_question_1: "Скільки коштує розробка сайту?",
     quest_answer_1:
       "Вартість розробки сайту залежить від багатьох факторів (існуючі вихідні дані, кількість необхідних сторінок, призначення ресурсу.\n Так, вартість редизайну вже наявного сайту буде відчутно нижчою, ніж вартість розробки сайту з нуля.\n Заповніть форму внизу сторінки та отримайте точну інформацію про вартість розробки Вашого конкретного сайту.\n Аналіз ефективності наявного сайту - безкоштовно.",
-    quest_question_2: "У меня уже есть работающий сайт. Зачем мне редизайн?",
+    quest_question_2: "У мене вже є сайт, що працює. Навіщо мені редизайн?",
     quest_answer_2:
       "Дизайн та технології в мережі змінюються дуже швидко.\n Щороку – з'являються нові тренди та підходи. Люди все більше часу проводять у мережі і, отже, саме віртуальний образ має більший вплив. Продуманий сучасний сайт - найкращий спосіб виділитися серед конкурентів",
     quest_question_3: "Як зрозуміти, чи потрібний моєму сайту редизайн?",
     quest_answer_3:
       "За Вашою заявкою ми проводимо аналіз сайту, що діє.\n Це безкоштовно!\n В результаті Ви отримаєте звіт щодо основних пунктів ефективності Вашого сайту (дизайн, seo-оптимізація, швидкість завантаження тощо) та конструктивні пропозиції щодо покращення цих параметрів.\n Далі Ви самі вирішуєте, що хочете змінити.",
+    quest_question_4: "У який термін здійснюється створення сайту?",
+    quest_answer_4:
+      "Як правило, замовник отримує готовий сайт через 1-2 місяці після початку роботи.\n У той же час, все залежить від масштабів проекту та складності поставленого завдання. \n Створення невеликого сайту може зайняти близько тижня, заробіток порталів може тривати більше півроку.",
+
+    quest_question_5: "Що якщо мене не влаштує результат роботи над сайтом?",
+    quest_answer_5:
+      "Ми ретельно вивчаємо всі ваші вимоги і відповідно до них створюємо дизайн-макети.\n Перед тим, як приступити до роботи, погоджуємо всі нюанси з дизайну та функціоналу.\n У процесі створення дизайну ви можете вносити коригування у створений проект.",
+
+    quest_question_6: "Чи можу я вносити нову інформацію на сайт самостійно?",
+    quest_answer_6:
+      "Оновлювати дані сайту можна самостійно.\n Для коректного внесення змін ми навчимо Вас або Ваших співробітників базовим навичкам ведення сайту. \nТакі нюанси обговорюються ще до створення сайту.",
+
+    quest_question_7: "Чи є якісь гарантії на веб-сайт?",
+    quest_answer_7:
+      "Ми гарантуємо наші сайти протягом шести місяців. При виявленні помилок, допущених нами, виправлення вносяться безкоштовно.\n Гарантія діє в тому випадку, якщо ви самостійно не вносили зміни до коду проекту.\n Крім того, ми здійснюємо повну технічну підтримку сайту.",
+
     contact_form_title_1: "готові до",
     contact_form_title_2: "змін",
     contact_desc:
       "Ще не вирішили, чи настав час попрацювати над сайтом?\n Або не впевнені, що взагалі щось потрібно міняти? \nЗалишіть заявку із зазначенням адреси діючого сайту.\n Ми проаналізуємо Ваш сайт і дамо докладний звіт, що і як можна змінити. \nЦе абсолютно БЕЗКОШТОВНО і ні до чого Вас не зобов'язує.\n А далі – вирішувати Вам.",
     badge: "безкоштовно",
     send: "надіслати",
+
+    start: "відправити",
+    finish: "відправлено",
+    formMessage: "Дякуємо за заявку!",
+    fill: 'Для надсилання заявки заповніть, будь ласка, обов\'язкові поля ("Ім\'я" та "Email")',
     name_key: "Ім'я",
     site_key: "Сайт",
     message_label: "Повідомлення",

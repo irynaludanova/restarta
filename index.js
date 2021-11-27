@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 })
 
 app.post("/mail", (req, res) => {
-  const { name, email, introduction, website } = req.body
+  const data = req.body
   let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
@@ -36,18 +36,22 @@ app.post("/mail", (req, res) => {
     },
   })
   const mailOptions = {
-    from: `${email}`,
+    from: `${data.email}`,
     to: "irynaludanova@gmail.com",
     subject: "Message",
-    text: `Name:${name}, \nEmail:${email}, \nMessage:${introduction}, \nWebsite:${website}`,
+    text: `Name:${data.name}, \nEmail:${data.email}, \nMessage:${data.introduction}, \nWebsite:${data.website}`,
   }
-  transporter.sendMail(mailOptions, (error, res) => {
+  transporter.sendMail(mailOptions, (error, data) => {
     verify()
     console.log(mailOptions)
     if (error) {
-      console.log("error")
+      res.json({
+        status: "fail",
+      })
     } else {
-      console.log("email send")
+      res.json({
+        status: "success",
+      })
     }
   })
   transporter.on("token", (token) => {

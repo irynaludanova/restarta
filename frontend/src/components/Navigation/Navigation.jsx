@@ -13,7 +13,7 @@ const Navigation = (props) => {
 
   return (
     <Row justify="space-between" className="nav">
-      <Col xs={{ span: 12 }} md={{ span: 8 }} lg={{ span: 6 }}>
+      <Col xs={{ span: 8 }} md={{ span: 6 }} lg={{ span: 4 }}>
         <Link smooth to="#main">
           <Logo />
         </Link>

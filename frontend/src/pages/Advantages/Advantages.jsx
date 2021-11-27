@@ -18,7 +18,7 @@ const Advantages = () => {
         <div className={classes.advantage}>
           {advantageStore.map(({ key1, index }) => {
             return (
-              <Col xs={24} sm={24} md={12} lg={8} xl={6}>
+              <Col key={key1} xs={24} sm={24} md={12} lg={8} xl={6}>
                 <AdvantageCard key={index} id={key1} className={classes.card} />
               </Col>
             )

@@ -16,5 +16,24 @@
 }
 .input:hover {
   background: #52546d;
+  color: black;
+}
+.msg {
+  text-align: center;
+  margin: 2rem;
+  width: 20rem;
+  padding: 3px;
   color: white;
+  background-color: #20255c5c;
+  display: none;
+}
+
+.msgAppear {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .msg {
+    margin: 1rem 0 1rem -1rem;
+  }
 }

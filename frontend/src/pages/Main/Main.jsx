@@ -3,7 +3,7 @@ import { Row, Col } from "antd"
 import OfferLeft from "../../components/OfferLeft/OfferLeft"
 import OfferRight from "../../components/OfferRight/OfferRight"
 import classes from "./Main.module.css"
-import arrow from "./../../assets/images/bigarrow.png"
+import arrow from "./../../assets/images/bigarrow.webp"
 const Main = () => {
   return (
     <>

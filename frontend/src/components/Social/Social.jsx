@@ -10,7 +10,7 @@ const Social = () => {
       <ul className={classes.items}>
         {socialRoutes.map((item, index) => {
           return (
-            <li className={classes.links}>
+            <li key={index} className={classes.links}>
               <a href={item.path} key={index}>
                 {item.component}
               </a>

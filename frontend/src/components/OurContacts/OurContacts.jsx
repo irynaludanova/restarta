@@ -24,7 +24,7 @@ const OurContacts = () => {
         </a>
         {socialRoutes.map((item, index) => {
           return (
-            <div>
+            <div key={index}>
               <a href={item.path} key={index} className={classes.link}>
                 {item.component} {item.text} {item.content}
               </a>
