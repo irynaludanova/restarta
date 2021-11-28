@@ -9,8 +9,17 @@ const PORT = process.env.PORT || 3001
 let initialPath = path.join(__dirname, "..", "frontend/public")
 const app = express()
 
+app.use(express.json({ extended: true }))
 app.use(express.static(initialPath))
 app.use(express.json())
+
+if (process.env.NODE_ENV === "production") {
+  app.use("/", express.static(path.join(__dirname, "frontend", "build")))
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"))
+  })
+}
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(initialPath, "index.html"))
