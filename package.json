@@ -4,13 +4,14 @@
   "description": "main project",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node index.js",
+    "start": " node index.js",
     "server": "nodemon index.js",
     "front": "npm run start --prefix frontend",
     "front:install": "npm install --prefix frontend",
     "front:build": "npm run build --prefix frontend",
-    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run front\""
+    "dev": " concurrently \"npm run server\" \"npm run front\""
   },
+  "homepage": "http://restart-a.com",
   "keywords": [
     "react",
     "landing",
@@ -20,19 +21,14 @@
   "author": "ludanova",
   "license": "ISC",
   "dependencies": {
-    "antd": "^4.16.13",
-    "bcryptjs": "^2.4.3",
     "concurrently": "^6.4.0",
-    "config": "^3.3.6",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "express-validator": "^6.13.0",
-    "nodemailer": "^6.7.1",
-    "nodemon": "^2.0.15",
-    "xoauth2": "^1.2.0"
+    "nodemailer": "^6.7.1"
   },
   "devDependencies": {
     "@formatjs/cli": "^4.4.0",
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.2"
   }
 }

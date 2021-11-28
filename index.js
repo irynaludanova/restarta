@@ -2,7 +2,6 @@ const express = require("express")
 const path = require("path")
 const nodemailer = require("nodemailer")
 const dotenv = require("dotenv")
-const xoauth2 = require("xoauth2")
 
 dotenv.config()
 const PORT = process.env.PORT || 3001
@@ -13,13 +12,11 @@ app.use(express.json({ extended: true }))
 app.use(express.static(initialPath))
 app.use(express.json())
 
-if (process.env.NODE_ENV === "production") {
-  app.use("/", express.static(path.join(__dirname, "frontend", "build")))
+app.use("/", express.static(path.join(__dirname, "frontend", "build")))
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"))
-  })
-}
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"))
+})
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(initialPath, "index.html"))
